@@ -12,7 +12,7 @@ Le schéma relationnel comprend les entités suivantes :
 
 ### Modèle physique (Mermaid ER Diagram)
 
-```mermaid
+mermaid
 erDiagram
     users {
         INT id PK
