@@ -25,7 +25,7 @@ erDiagram
         DATETIME updated_at
     }
 
-    projects {
+  projects {
         INT id PK
         VARCHAR title
         TEXT description
@@ -38,7 +38,7 @@ erDiagram
         DATETIME updated_at
     }
 
-    tasks {
+  tasks {
         INT id PK
         VARCHAR title
         TEXT description
@@ -52,8 +52,8 @@ erDiagram
         DATETIME updated_at
     }
 
-    users ||--o{ projects : creates
-    users ||--o{ projects : manages
-    users ||--o{ tasks : creates
-    users ||--o{ tasks : assigned
-    projects ||--o{ tasks : contains
+users ||--o{ projects : creates
+  users ||--o{ projects : manages
+ users ||--o{ tasks : creates
+ users ||--o{ tasks : assigned
+projects ||--o{ tasks : contains
